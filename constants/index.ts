@@ -27,7 +27,7 @@ export const Skill_data = [
       skill_name: "React",
       Image: "/react.png",
       width: 80,
-      height: 80,
+      height: 80
     },
     {
       skill_name: "Redux",

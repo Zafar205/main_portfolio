@@ -1,6 +1,24 @@
 import React from 'react';
 import Image from 'next/image';
-import {Socials} from '@/constants'
+// import {Socials} from '@/constants'
+
+const Socials = [
+  {
+    name: "Discord",
+    src: "/discord.svg",
+    url: "https://discord.com", // Add the Discord link here
+  },
+  {
+    name: "Facebook",
+    src: "/facebook.svg",
+    url: "https://facebook.com", // Add the Facebook link here
+  },
+  {
+    name: "Instagram",
+    src: "/instagram.svg",
+    url: "https://instagram.com", // Add the Instagram link here
+  },
+];
 
 const Navbar = () => {
   return (
@@ -25,21 +43,20 @@ const Navbar = () => {
           </div>
         </div>
 
-
         <div className='flex flex-row gap-5'>
-              {
-                Socials.map(  (Social) => (
-                  <Image 
-                  src = {Social.src}
-                  alt={Social.name}
-                  key={Social.name}
+          {
+            Socials.map((social) => (
+              <a href={social.url} target="_blank" rel="noopener noreferrer" key={social.name}> {/* Add link here */}
+                <Image 
+                  src={social.src}
+                  alt={social.name}
                   width={24}
-                  height={24}/>
-                ))
-              }
+                  height={24}
+                />
+              </a>
+            ))
+          }
         </div>
-
-
       </div>
     </div>
   );
