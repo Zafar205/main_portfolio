@@ -30,9 +30,9 @@ const Navbar = () => {
             alt='logo'
             height={70}
             width={70}
-            className='cursor-point hover:animate-slowspin'
+            className='cursor-point '
           />
-          <span className='font-bold ml-[20px] hidden md:block text-gray-300'>Muhammad Zafar</span> {/* Increased space between logo and text */}
+          <span className='font-bold ml-[20px] hidden md:block text-gray-400'>Muhammad Zafar</span> {/* Increased space between logo and text */}
         </a>
 
         <div className='w-[500px] h-full flex flex-row items-center justify-between md:mr-20'>
