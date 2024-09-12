@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Community</div>
             <a
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/@mohamedalzafar6796"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
@@ -28,7 +28,7 @@ const Footer = () => {
               <span className="text-[15px] ml-[6px]">Youtube</span>
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/zafar205"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
@@ -72,7 +72,7 @@ const Footer = () => {
               <span className="text-[15px] ml-[6px]">Twitter</span>
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/muhammadzafar2062005/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row items-center my-[15px] cursor-pointer"
