@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <div className='w-[500px] h-full flex flex-row items-center justify-between md:mr-20'>
           <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] text-white bg-[#0300145e] px-[20px] py-[10px] rounded-full'>
-            <a href="#about-me" className='cursor-pointer mx-[15px]'>About me</a> {/* Increased margin between links */}
+            <a href="#about-me" className='cursor-pointer mx-[15px]'>About</a> {/* Increased margin between links */}
             <a href="#skills" className='cursor-pointer mx-[15px]'>Skills</a> {/* Increased margin between links */}
             <a href="#projects" className='cursor-pointer mx-[15px]'>Projects</a> {/* Increased margin between links */}
           </div>

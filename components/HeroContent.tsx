@@ -41,7 +41,7 @@ function HeroContent() {
         </div>
 
         <motion.div variants={slideInFromRight(0.8)} className='w-full h-full flex items-center justify-center'>
-                <Image src="/mainIconsdark.svg"
+                <Image src="/heroimage2.png"
                         alt="work icons"
                         height= {650} 
                         width={650}/>
