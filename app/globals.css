@@ -55,15 +55,30 @@
   box-shadow: inset 0 0 12px #bf97ff70;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollbar-hidden {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none;
+/* For WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Narrow width for the scrollbar */
 }
 
+::-webkit-scrollbar-track {
+  background-color: #1c1c1c; /* Dark background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b50ff; /* Purple color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded edges for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a172ff; /* Lighter purple on hover */
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hides the buttons at the top and bottom */
+}
+
+/* Firefox */
 html {
-  scroll-behavior: smooth;
+  scrollbar-width: thin; /* Thin scrollbar width */
+  scrollbar-color: #8b50ff #1c1c1c; /* Thumb color, track color */
 }

@@ -1,14 +1,14 @@
-"use client"
+"use client";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion';
 import {motion} from 'framer-motion';
 import React from 'react';
 import { SparklesIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image'; 
+import { Typewriter } from 'react-simple-typewriter';
 
 function HeroContent() {
   return (
     <motion.div initial='hidden' animate='visible' className='flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]'>
-
 
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-start'>
             <motion.div 
@@ -22,11 +22,21 @@ function HeroContent() {
 
             <motion.div
             variants={slideInFromLeft(0.5)} 
-            className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[800px] w-auto h-auto'>
+            className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[950px] w-auto h-auto'>
                 <span>
-                Providing
-                <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> the best </span>
-                Project Experience
+                  <Typewriter
+                    words={['Providing the best Experience', 'Full Stack Development', "Modern Web Designs"]}
+                    loop={false}
+                    cursor
+                    cursorStyle='|'
+                    typeSpeed={100}
+                    deleteSpeed={100}
+                    delaySpeed={1000}
+                  />
+                  <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
+                    {/* the best */}
+                  </span>
+                  {/* Project Experience */}
                 </span>
             </motion.div>
 
@@ -43,12 +53,12 @@ function HeroContent() {
         <motion.div variants={slideInFromRight(0.8)} className='w-full h-full flex items-center justify-center'>
                 <Image src="/heroimage2.png"
                         alt="work icons"
-                        height= {650} 
-                        width={650}/>
+                        height= {900} 
+                        width={900}/>
         </motion.div>
 
     </motion.div>
   )
 }
 
-export default HeroContent
+export default HeroContent;
