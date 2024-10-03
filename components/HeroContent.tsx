@@ -50,10 +50,11 @@ function HeroContent() {
 
         </div>
 
-        <motion.div variants={slideInFromRight(0.8)} className='w-full h-full flex items-center justify-center'>
+        {/* Hide the hero image on small screens */}
+        <motion.div variants={slideInFromRight(0.8)} className='hidden md:flex w-full h-full items-center justify-center'>
                 <Image src="/heroimage2.png"
                         alt="work icons"
-                        height= {900} 
+                        height={900} 
                         width={900}/>
         </motion.div>
 
