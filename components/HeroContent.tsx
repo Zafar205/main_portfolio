@@ -22,10 +22,10 @@ function HeroContent() {
 
             <motion.div
             variants={slideInFromLeft(0.5)} 
-            className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[950px] w-auto h-auto'>
+            className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[800px] w-auto h-auto'>
                 <span>
                   <Typewriter
-                    words={['Providing the best Experience', 'Full Stack Development', "Modern Web Designs"]}
+                    words={['Providing the best Experience', "Modern and Responsive Web Designs"]}
                     loop={false}
                     cursor
                     cursorStyle='|'
@@ -50,7 +50,6 @@ function HeroContent() {
 
         </div>
 
-        {/* Hide the hero image on small screens */}
         <motion.div variants={slideInFromRight(0.8)} className='hidden md:flex w-full h-full items-center justify-center'>
                 <Image src="/heroimage2.png"
                         alt="work icons"

@@ -1,5 +1,7 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import Image from 'next/image';
+import { Menu } from 'lucide-react';
 
 const Socials = [
   {
@@ -20,9 +22,15 @@ const Socials = [
 ];
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10'>
-      <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
+    <div className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10'>
+      <div className='w-full h-full flex flex-row items-center justify-between m-auto'>
         
         {/* Logo */}
         <a href='#about-me' className='h-auto w-auto flex flex-row items-center'>
@@ -36,17 +44,17 @@ const Navbar = () => {
           <span className='font-bold ml-[20px] hidden md:block text-gray-400'>Muhammad Zafar</span>
         </a>
 
-        {/* Navigation Links */}
-        <div className='w-[300px] md:w-[500px] h-full flex items-center justify-between md:mr-20'>
-          <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] text-white bg-[#0300145e] px-[10px] py-[5px] md:px-[20px] md:py-[10px] rounded-full'>
-            <a href="#about-me" className='cursor-pointer mx-[5px] md:mx-[15px] text-sm md:text-base'>About</a>
-            <a href="#skills" className='cursor-pointer mx-[5px] md:mx-[15px] text-sm md:text-base'>Skills</a>
-            <a href="#projects" className='cursor-pointer mx-[5px] md:mx-[15px] text-sm md:text-base'>Projects</a>
+        {/* Navigation Links - Desktop */}
+        <div className='hidden md:flex items-center justify-between w-[500px] h-full md:mr-20'>
+          <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] text-white bg-[#0300145e] px-[20px] py-[10px] rounded-full'>
+            <a href="#about-me" className='cursor-pointer mx-[15px] text-base'>About</a>
+            <a href="#skills" className='cursor-pointer mx-[15px] text-base'>Skills</a>
+            <a href="#projects" className='cursor-pointer mx-[15px] text-base'>Projects</a>
           </div>
         </div>
 
-        {/* Social Media Links */}
-        <div className='flex flex-row gap-2 md:gap-5'>
+        {/* Social Media Links - Desktop */}
+        <div className='hidden md:flex flex-row gap-5'>
           {Socials.map((social) => (
             <a href={social.url} target="_blank" rel="noopener noreferrer" key={social.name}>
               <Image 
@@ -58,7 +66,23 @@ const Navbar = () => {
             </a>
           ))}
         </div>
+
+        {/* Hamburger Menu - Mobile */}
+        <button className='md:hidden text-white' onClick={toggleMenu}>
+          <Menu size={24} />
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className='md:hidden absolute top-[65px] left-0 w-full bg-[#03001417] backdrop-blur-md'>
+          <div className='flex flex-col items-center py-4'>
+            <a href="#about-me" className='cursor-pointer my-2 text-white' onClick={toggleMenu}>About</a>
+            <a href="#skills" className='cursor-pointer my-2 text-white' onClick={toggleMenu}>Skills</a>
+            <a href="#projects" className='cursor-pointer my-2 text-white' onClick={toggleMenu}>Projects</a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
