@@ -49,14 +49,14 @@ const Projects = () => {
         />
         </a>
 
-        <a href={link} target="_blank" rel="noopener noreferrer" style={{zIndex : 100}}>
+        {/* <a href={link} target="_blank" rel="noopener noreferrer" style={{zIndex : 100}}>
         <ProjectCard
           src="/CardImage.png"
           title="Interactive Website Cards"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
         />
-        </a>
+        </a> */}
         
       </div>
     </div>
