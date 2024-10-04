@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href='#about-me' className='h-auto w-auto flex flex-row items-center'>
             <Image
-              src="/NavLogo.png"
+              src="/logo12.svg"
               alt='logo'
               height={70}
               width={70}
