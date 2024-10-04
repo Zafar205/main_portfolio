@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="electronGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="nucleusGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Electron orbits -->
+  <g opacity="0.7">
+    <ellipse cx="100" cy="100" rx="90" ry="35" fill="none" stroke="url(#electronGradient)" stroke-width="2" transform="rotate(0 100 100)">
+      <animate attributeName="rx" values="90;85;90" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="35;30;35" dur="6s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="100" cy="100" rx="90" ry="35" fill="none" stroke="url(#electronGradient)" stroke-width="2" transform="rotate(60 100 100)">
+      <animate attributeName="rx" values="90;85;90" dur="6s" repeatCount="indefinite" begin="2s" />
+      <animate attributeName="ry" values="35;30;35" dur="6s" repeatCount="indefinite" begin="2s" />
+    </ellipse>
+    <ellipse cx="100" cy="100" rx="90" ry="35" fill="none" stroke="url(#electronGradient)" stroke-width="2" transform="rotate(-60 100 100)">
+      <animate attributeName="rx" values="90;85;90" dur="6s" repeatCount="indefinite" begin="4s" />
+      <animate attributeName="ry" values="35;30;35" dur="6s" repeatCount="indefinite" begin="4s" />
+    </ellipse>
+  </g>
+  
+  <!-- Electrons -->
+  <circle cx="190" cy="100" r="4" fill="#00f2fe">
+    <animate attributeName="cx" values="190;10;190" dur="6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="55" cy="150" r="4" fill="#00f2fe">
+    <animate attributeName="cx" values="55;145;55" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="150;50;150" dur="6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="55" cy="50" r="4" fill="#00f2fe">
+    <animate attributeName="cx" values="55;145;55" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="50;150;50" dur="6s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Nucleus -->
+  <circle cx="100" cy="100" r="22" fill="url(#nucleusGradient)">
+    <animate attributeName="r" values="22;20;22" dur="3s" repeatCount="indefinite" />
+  </circle>
+</svg>
