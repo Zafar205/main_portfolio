@@ -25,7 +25,7 @@ function HeroContent() {
             className='flex flex-col gap-6 mt-6 text-4xl font-bold text-white max-w-[800px] w-auto h-auto'>
                 <span>
                   <Typewriter
-                    words={['Providing the best Experience', "Modern Web Designs"]}
+                    words={['Providing the Best Experience', "Modern Web Designs"]}
                     loop={false}
                     cursor
                     cursorStyle='|'
