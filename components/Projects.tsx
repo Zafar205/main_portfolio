@@ -16,7 +16,7 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <a href={link} target="_blank" rel="noopener noreferrer" style={{zIndex : 100}}>
         <ProjectCard
-          src="/notetaker.png"
+          src="/notetaker.jpg"
           title="AI Note Taking App"
           description="Built with Next.js for a responsive and smooth user experience, this platform features SHADCN and Liveblocks to support real-time, collaborative text editing. The backend, powered by Cloudflare Workers, ensures scalability and seamless processing, while Firebase manages efficient data storage and retrieval. Additionally, OpenAI APIs are integrated to offer AI-driven translation and a chat-to-document feature, making multilingual documentation more efficient and accessible."
 
