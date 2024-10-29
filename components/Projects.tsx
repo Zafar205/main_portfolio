@@ -18,8 +18,7 @@ const Projects = () => {
         <ProjectCard
           src="/notetaker.jpg"
           title="AI Note Taking App"
-          description="Built with Next.js for a responsive and smooth user experience, this platform features SHADCN and Liveblocks to support real-time, collaborative text editing. The backend, powered by Cloudflare Workers, ensures scalability and seamless processing, while Firebase manages efficient data storage and retrieval. Additionally, OpenAI APIs are integrated to offer AI-driven translation and a chat-to-document feature, making multilingual documentation more efficient and accessible."
-
+          description="Built with Next.js, SHADCN, and Liveblocks for responsive, collaborative editing, this platform ensures seamless processing via Cloudflare Workers and efficient data handling with Firebase. Integrated OpenAI APIs provide AI-driven translation and chat-to-document features for smooth, multilingual documentation."
         />
         </a>
     
