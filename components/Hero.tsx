@@ -3,7 +3,7 @@ import HeroContent from './HeroContent'
 
 function Hero() {
   return (
-    <div className='flex flex-col h-full w-full'>
+    <div className='flex flex-col h-full w-full' id='about-me'>
         {/* <video loop autoPlay muted 
         className='rotate-180 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover' >
 
