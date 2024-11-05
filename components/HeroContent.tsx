@@ -44,7 +44,7 @@ function HeroContent() {
                 I&apos;am a Full Stack Developer with Experience in Website and Software Development. Check out my projects and skills.
             </motion.p>
 
-            <motion.a href='/Zafar.cv.pdf' variants={slideInFromLeft(1)} className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]' download>
+            <motion.a href='/MuhammadZafar.pdf' variants={slideInFromLeft(1)} className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]' download>
                 My Resume
             </motion.a>
 
